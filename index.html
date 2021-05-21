@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section class="header">
+            <nav>
+                <a href="index.html" class="brading">Srivatsa Chakrapani</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text_box">
+                    <img src="Assets/srivatsa.png" alt="Man">
+                    <p class="brand_name">Srivatsa Chakrapani</p>
+                    <p class="intro">Full Stack Developer</p>
+                    <p class="desc">
+                        Software Developer at Tata Consultancy Services <br/>
+                        With over 2.5 years of hands-on project experience in .Net <br />& Front-end Technologies.
+                    </p>
+            </div>
+        </section>
+        <section class="bio" id="bio">
+            <h2>Personal Bio</h2>
+            <div class="row">
+                <div class="column">
+                    <h3><span><i class="fas fa-user-graduate fa-1x"></i></span> Educational Background</h2>
+                        <h4 style="margin-top: 10px;"><span class="underline">Graduation Details</span></h4>
+                        <p style="margin-top: 10px;">BE - Computer Science Engineering <br /> From Sri Sairam Institute Of Technology<br />From 2014-2018</p>
+                    <h4 style="margin-top: 10px;"><span class="underline">School Education</span></h4>
+                        <p style="margin-top: 10px;"><span class="underline">Class XII,</span><br />From S.R.D.F.Vivekanda Vidyalaya <br />From 2013-2014</p>
+                        <p style="margin-top: 10px;"><span class="underline">Class X,</span> <br />From S.R.D.F.Vivekanda Vidyalaya<br />From 2011-2012</p>
+                </div>
+                <div class="column">
+                    <h3><span><i class="fas fa-briefcase"></i></span> Experience</h2>
+                        <h4 style="margin-top: 10px;"><span class="underline">Software Developer</span></h4>
+                        <p style="margin-top: 10px;">
+                            <span class="underline";">Responsibilites:</span> <br />
+                            1. Involved in the software development and maintenance of existing codebase. <br />
+                            2. Software development involved in C# .Net, ASP.NET, SQL server and Front End Framework like Angular and React. <br />
+                            3. Responsible for the quality and coding of software components that make up complex systems. <br />
+                            4. Managing the software build, release based on the project requirements <br />
+                            5. Designed, coded, tested .Net Applications following coding standards and business requirements <br />
+                            6. Writing Stored Procedures <br />
+                            7.Designed and managed JIRA Dashboards for reporting purposes on various SLAs <br />
+                            From Nov 2018-Present</p>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="row">
+                <div class="column">
+                    <h3><span><i class="fas fa-code"></i></span> Programming Languages</h2>
+                    <p class="block" style="margin-top: 10px;">C#</p>
+                    <p class="block">ASP.NET MVC</p>
+                    <p class="block">ASP.NET WebAPI</p>
+                    <p class="block">ASP.NET Webforms</p>
+                    <p class="block">SQL Server</p>
+                    <p class="block">Entity Framework</p>
+                    <p class="block">Angular</p>
+                    <p class="block">Web designing</p>
+                </div>
+                <div class="column">
+                    <h3><span><i class="fas fa-terminal"></i></span> Known Tools</h2>
+                        <p class="block" style="margin-top: 10px;">Visual Studio</p>
+                        <p class="block">MS SQL Server Management</p>
+                        <p class="block">Visual Studio Code</p>
+                        <p class="block">Git</p>
+                        <p class="block">Bitbucket</p>
+                        <p class="block">JIRA</p>
+                        <p class="block">ServiceNow</p>
+                        <p class="block">Veracode</p>
+                        <p class="block">Sitecore CMS</p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Details -->
+        <section class="contact" id="contact">
+            <h2>Personal Details</h2>
+            <div class="container">
+                <p><span><i class="fas fa-envelope"></i></span> srivatsa.286@gmail.com</p>
+                <p><span><i class="fab fa-linkedin"></i></span><a href="https://www.linkedin.com/in/srivatsarao28/"> LinkedIn Profile</a></p>
+                <p><span><i class="fab fa-github"></i></span><a href="https://www.linkedin.com/in/srivatsarao28/"> Github Repo</a></p>
+            </div>
+        </section>
+        <section class="footer">
+                <p>Srivatsa Chakrapani Copyright, &copy; 2021</p>
+        </section>
+        <script src="" async defer></script>
+        <script src="https://kit.fontawesome.com/f62e66d572.js" crossorigin="anonymous"></script>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
