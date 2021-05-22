@@ -81,7 +81,7 @@ nav{
     border-radius: 2%;
     max-width: 290px;
     min-height: 330px;
-    box-shadow: 3px 3px 10px -4px rgba(0,0,0,.2);
+    box-shadow: 3px 3px 10px -4px rgba(0,0,0,.3);
 }
 
 .brand_name {
@@ -131,7 +131,7 @@ nav .fas{
         background-color: rgba(255, 255, 255, 0.9);
         width: 200px;
         top: 0;
-        right: 0;
+        right: -200px;
         text-align: left;
         z-index: 2;
         transition: 1s;
@@ -269,6 +269,10 @@ h4{
     margin: auto;
     text-align: center;
     background-color: rgb(255, 255, 255);
+}
+
+container .fas{
+    text-decoration: none;
 }
 
 @media(max-width: 700px){
